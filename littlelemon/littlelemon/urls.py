@@ -21,7 +21,7 @@ from rest_framework import routers
 from restaurant import views
 
 router = routers.DefaultRouter()
-router.register(r'tables', views.BookingView)
+router.register(r'tables', views.BookingViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
